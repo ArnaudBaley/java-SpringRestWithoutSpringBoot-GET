@@ -21,12 +21,16 @@
 ### Installation 
 
 -Maven -> New "maven-archetype-webap"
+	
 	-Group Id = com.spring.rest
+	
 	-Artefact Id = SpringRestWithoutSpringBoot
 
 -Créer nouveaux dossiers suivants : 
+
 	-"java" à la base de src/main/
--"domain" à la base de src/main/java
+
+		-"domain" à la base de src/main/java
 
 -Pom.xml : 
 ```xml
@@ -170,7 +174,9 @@ public class HelloWorldRestController {
 #### Configuration
 
 Classe HelloWorldConfiguration pour : 
+
 -component scanning
+
 -annotation support
 
 Classe HelloWorldConfiguration.java dans package com.spring.rest.configuration :
@@ -191,7 +197,9 @@ public class HelloWorldConfiguration {
 
 
 Classe HelloWorldInitializer pour :
+
 -remplace config spring dans web.xml
+
 -chargée au démarrage du container Srpring
 
 Classe HelloWorldInitializer.java dans package com.spring.rest.configuration :
