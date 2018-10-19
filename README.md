@@ -11,6 +11,7 @@
 ## LANCEMENT
 
 [http://localhost:8080/SpringRestWithoutSpringBoot/](http://localhost:8080/SpringRestWithoutSpringBoot/)
+
 [http://localhost:8080/SpringRestWithoutSpringBoot/hello/arnaud](http://localhost:8080/SpringRestWithoutSpringBoot/hello/arnaud)
 
 
@@ -109,7 +110,7 @@
 
 ### Dev
 
-Pojo/domain
+#### Pojo/domain
 
 Classe Message.java dans package com.spring.rest.domain :
 ```java
@@ -136,7 +137,7 @@ public class Message {
 }
 ```
 
-Controller
+#### Controller
 
 Classe HelloWorldRestController.java dans package com.spring.rest.controller :
 ```java
@@ -166,7 +167,7 @@ public class HelloWorldRestController {
 ```
 
 
-Configuration
+#### Configuration
 
 Classe HelloWorldConfiguration pour : 
 -component scanning
