@@ -8,6 +8,11 @@
 [Hello world](http://websystique.com/springmvc/spring-4-mvc-rest-service-example-using-restcontroller/)
 
 
+## IMPORT DANS ECLIPSE
+
+File -> Import -> Maven -> Existing Maven Projects
+
+
 ## LANCEMENT
 
 [http://localhost:8080/SpringRestWithoutSpringBoot/](http://localhost:8080/SpringRestWithoutSpringBoot/)
