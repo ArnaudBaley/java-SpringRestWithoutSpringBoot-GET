@@ -2,6 +2,11 @@
 
 ![screenshot](https://github.com/ArnaudBaley/java-SpringRestWithoutSpringBoot-GET/blob/master/Capture.PNG)
 
+## BRANCHES
+
+[Config_xml](https://github.com/ArnaudBaley/java-SpringRestWithoutSpringBoot-GET/tree/Config_xml)  
+[Spring_security_basic_auth](https://github.com/ArnaudBaley/java-SpringRestWithoutSpringBoot-GET/tree/Spring_security_basic_auth)  
+[Spring_security_basic_auth_xml](https://github.com/ArnaudBaley/java-SpringRestWithoutSpringBoot-GET/tree/Spring_security_basic_auth_xml)
 
 ## SOURCES
 
