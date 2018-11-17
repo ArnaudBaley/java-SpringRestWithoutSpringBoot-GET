@@ -1,6 +1,6 @@
 # java-SpringRestWithoutSpringBoot-GET -> Spring security xml
 
-![screenshot](https://github.com/ArnaudBaley/java-SpringRestWithoutSpringBoot-GET/blob/Spring_security_basic_auth_xml/Capture.PNG
+![screenshot](https://github.com/ArnaudBaley/java-SpringRestWithoutSpringBoot-GET/blob/Spring_security_basic_auth_xml/Capture.PNG)
 
 ## LANCEMENT
 
