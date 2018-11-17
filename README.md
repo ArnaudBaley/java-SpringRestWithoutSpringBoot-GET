@@ -82,7 +82,7 @@
 </web-app>
 ```
 
--**spring-security.xml.xml** : 
+-**spring-security.xml** : 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans:beans xmlns="http://www.springframework.org/schema/security"
