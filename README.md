@@ -35,27 +35,49 @@
 ........
 ```
 
-Classe Message.java dans package com.spring.rest.domain :
+Classe **SecurityWebApplicationInitializer.java** dans package com.spring.rest.security :
 ```java
-package com.spring.rest.domain;
+package com.spring.rest.security;
 
-public class Message {
+import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 
-	String name;
-	String text;
+public class SecurityWebApplicationInitializer
+extends AbstractSecurityWebApplicationInitializer {
+	
+}
+```
 
-	public Message(String name, String text) {
-		this.name = name;
-		this.text = text;
-	}
+Classe **SpringSecurityConfig.java** dans package com.spring.rest.security :
+```java
+package com.spring.rest.security;
 
-	public String getName() {
-		return name;
-	}
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-	public String getText() {
-		return text;
-	}
-
+@Configuration
+@EnableWebSecurity
+public class SpringSecurityConfig 
+  extends WebSecurityConfigurerAdapter {
+ 
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth)
+      throws Exception {
+        auth.inMemoryAuthentication()
+          .withUser("user").password("password").roles("USER");
+    }
+    
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+          .csrf().disable()
+          .authorizeRequests()
+          .antMatchers("/**")
+          .authenticated()
+          .and()
+          .formLogin();
+    }  
 }
 ```
