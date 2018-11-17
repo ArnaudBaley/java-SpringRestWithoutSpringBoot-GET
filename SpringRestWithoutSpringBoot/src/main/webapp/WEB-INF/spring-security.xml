@@ -7,8 +7,6 @@
                                  http://www.springframework.org/schema/beans
                                  http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- <beans:bean id="basicAuthEntryPoint" class="com.memorynotfound.spring.security.config.CustomAuthenticationEntryPoint"/> -->
-
     <http realm="API">
         <intercept-url pattern="/**" access="isAuthenticated()"/>
         <http-basic/>
