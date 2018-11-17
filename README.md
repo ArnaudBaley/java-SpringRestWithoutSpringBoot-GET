@@ -261,8 +261,8 @@ src/main/webapp/WEB-INF/**web.xml** référence le DispatcherServlet.
 ```
 
 src/main/webapp/WEB-INF/**spring-servlet.xml** :
--Référence les librairies Sring.
--Spécifie où les composants sont présents
+-Référence les librairies Sring.  
+-Spécifie où les composants sont présents  
 -Active les annotations MVC
 ```xml
 <beans xmlns="http://www.springframework.org/schema/beans"
